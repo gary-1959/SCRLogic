@@ -1,12 +1,12 @@
 # SCRLogic
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/gary-1959/SCRLogic/main/images/SCR-Logic-Banner-2.png" alt="FutureNET DASH Logo" title="FutureNET DASH Logo">
+<img src="https://raw.githubusercontent.com/gary-1959/SCRLogic/main/images/SCR-Logic-Banner-2.png" alt="SCRLogic - The SCR Training Simulator for Rig Electricians" title="SCRLogic - The SCR Training Simulator for Rig Electricians">
 </p>
 
 SCRLogic is a software simulation package for training rig electricians to troubleshoot SCR systems.
 
-It is written in C# for a Windows PC. There is some fairly trivial license protection built in, which can be fairly easily overridden in the source to fully unlock the entire package. As it is it will run in a limited demo mode. Permission is hereby granted by anyone to remove this protection and publish with the appropriate credits.
+It is written in C# for a Windows PC.
 
 The file SCRLogic.zip contains a downloadable installer so might be worth a try if you don't fancy rebuilding the project. 
 																
@@ -33,8 +33,6 @@ To understand the full capabilities of SCRLogic a User Manual PDF is available h
 The software has complex calculations to perform to simulate the analogue circuitry, so a Windows (version 7 or later) PC with plenty of memory (at least 4GB) and a powerful CPU will improve the user experience. The software will run on 32-bit machines, but these may experience memory problems due to memory fragmentation, so 64-bit is recommended.
 
 A mouse with a scroll wheel is required.
-
-The demo version has some limitations on usage (most notably scripting and a limited number of faults) and will time out after 20 minutes of use. To unlock all the features you would need to remove the trivial licensing protection in the source and and recompile.
 
 ## SharpCircuit License
 
@@ -66,23 +64,4 @@ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-## Falstad Circuit Simulator
-
-Although no part of this code is included, this license is referenced in the SharpCircuit documentation and so is included here for completeness.
-
-CirSim.java (c) 2010 by Paul Falstad - java@falstad.com
-http://www.falstad.com/circuit/
-
-Falstad.com Applet Source Licence.
-http://www.falstad.com/licensing.html
-
-You have permission to use these applets in a classroom setting or take screenshots 
-as long as the applets are unmodified. Modification or redistribution for non-commercial 
-purposes is allowed, as long as you credit me (Paul Falstad) and provide a link to my page 
-(the page you found the applet(s) on, or http://www.falstad.com/mathphysics.html). Contact 
-me for any other uses. The source code for each applet is generally available on that applet's 
-web page, but some of the applets use third-party source code that has restrictions.
-
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
-WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
