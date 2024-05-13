@@ -1,0 +1,13 @@
+Report = Component Wire List
+Format = (3 2 65 66 0 1 )
+Title = ("WIRENO" "PIN" "TAGNAME" "LOC" "WLAY" "P1C2" "REF" "SH" "SHDWGNAM" "BLKNAME" "HDL" "XTERM" "CBL" "CBLWC" "NONC" "SEC" "SUBSEC" "TERMDESC" "INST" "DESC1" "DESC2" "DESC3" "MFG" "CATALOG" "ASSYCODE" "RATING1" "RATING2" "RATING3" "RATING4" "RATING5" "RATING6" "RATING7" "RATING8" "RATING9" "RATING10" "RATING11" "RATING12" "XTERMHDL" "XDIR" "DWGIX" "CBLHDL" "CBLDWGIX" "WIRECOLOR" "WIRESIZE" "USER1" "USER2" "USER3" "USER4" "USER5" "USER6" "USER7" "USER8" "USER9" "USER10" "USER11" "USER12" "USER13" "USER14" "USER15" "USER16" "USER17" "USER18" "USER19" "USER20" "WIRENUM" )
+Title UDA = ("NETTAG" "NETVALUE" )
+Tag UDA = ("NETTAG" "NETVALUE" )
+Characters = (24 10 24 16 32 3 12 12 40 32 11 3 24 60 3 60 60 16 24 60 60 60 24 60 60 60 60 60 60 60 60 60 60 60 60 60 60 18 8 12 24 24 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 )
+Characters UDA = (24 24 )
+Justification = ("R" "R" "L" "L" "L" "R" "L" "R" "L" "L" "L" "R" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" "L" )
+Justification UDA = ("TL" "TL" )
+Sorting = (4 3 2 1 )
+Include Options = ("0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" )
+Location Options = (1 nil )
+Installation Options = (1 "" )

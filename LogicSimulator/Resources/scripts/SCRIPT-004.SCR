@@ -1,0 +1,7 @@
+/* SCRLogic Fault Scenario Script
+/* Demo Script 004: RT Pot Fault
+/* Puts 85% pot break on RT Current Limit rear pot, then adds hand ref fault after 2 minutes
+#1.00
+00:00:00	0000	I	<h1>Complete the following:</h1>{{n}}<ul>{{n}}<li>Close the SCR circuit breakers for SCR1-4.</li>{{n}}<li><p>TIP: Check ALL RT assignments!</li>{{n}}</ul>	tannoy.png
+00:00:10	0023	F	<p>I can't get anything out of the Rotary, then it suddenly takes off.</p>{{n}}<p>You gotta fix this, this is plain dangerous!</p>	driller.png
+00:02:10	0016	F	{{empty}}	noimage.png

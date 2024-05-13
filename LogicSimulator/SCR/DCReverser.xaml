@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="SharpCircuit.DCReverser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="636" d:DesignWidth="538">
+    <Grid>
+        <Image x:Name="ContactorImage" Margin="0" Source="/SCRLogic;component/Resources/CONTACTOR-REVERSER-OPEN.png"/>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="31*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="52*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="168*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="51*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="33*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="26*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="139*"/>
+                <ColumnDefinition Width="26*"/>
+                <ColumnDefinition Width="53*"/>
+            </Grid.ColumnDefinitions>
+            <local:CircuitPoint x:Name="cpA" Margin="0" Grid.Row="3" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpB" Margin="0" Grid.Row="4" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpC" Margin="0" Grid.Row="9" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpD" Margin="0" Grid.Row="10" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpE" Margin="0" Grid.Row="6" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpF" Margin="0" Grid.Row="7" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpG" Margin="0" Grid.Row="12" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpH" Margin="0" Grid.Row="13" Grid.Column="1"/>
+            <local:CircuitPoint x:Name="cpJ" Margin="0" Grid.Row="3" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpK" Margin="0" Grid.Row="4" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpL" Margin="0" Grid.Row="9" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpM" Margin="0" Grid.Row="10" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpN" Margin="0" Grid.Row="6" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpP" Margin="0" Grid.Row="7" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpQ" Margin="0" Grid.Row="12" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpR" Margin="0" Grid.Row="13" Grid.Column="7"/>
+            <local:CircuitPoint x:Name="cpPT" Margin="0" Grid.Row="1" Grid.Column="5"/>
+            <local:CircuitPoint x:Name="cpNT" Margin="0" Grid.Row="1" Grid.Column="3"/>
+            <local:CircuitPoint x:Name="cpPB" Margin="0" Grid.Row="15" Grid.Column="3"/>
+            <local:CircuitPoint x:Name="cpNB" Margin="0" Grid.Row="15" Grid.Column="5"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

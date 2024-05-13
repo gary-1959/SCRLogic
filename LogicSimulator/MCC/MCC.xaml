@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="SharpCircuit.MCC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+            d:DesignHeight="2762" d:DesignWidth="2380">
+
+
+    <Grid x:Name ="MainContainer" Margin="0">
+        <Image x:Name="MCCFrame"  Margin="0" Source="/SCRLogic;component/Resources/MCC-CABINET.png" />
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="170*"/>
+                <RowDefinition Height="4682*"/>
+                <RowDefinition Height="171*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="97*" />
+                <ColumnDefinition Width="1312*" />
+                <ColumnDefinition Width="97*" />
+                <ColumnDefinition Width="1312*" />
+                <ColumnDefinition Width="97*" />
+                <ColumnDefinition Width="1312*" />
+                <ColumnDefinition Width="97*" />
+                
+            </Grid.ColumnDefinitions>
+            
+            <!-- COLUMN 1 -->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <local:MCCCan x:Name="A1" Grid.Row="0"/>
+                <local:MCCCan x:Name="A2" Grid.Row="1"/>
+                <local:MCCCan x:Name="A3" Grid.Row="2"/>
+
+            </Grid>
+
+            <!-- COLUMN 2 -->
+            <Grid Grid.Row="1" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <local:MCCCan x:Name="B1" Grid.Row="0"/>
+                <local:MCCCan x:Name="B2" Grid.Row="1"/>
+                <local:MCCCan x:Name="B3" Grid.Row="2"/>
+                <local:MCCCan x:Name="B4" Grid.Row="3"/>
+                <local:MCCCan x:Name="B5" Grid.Row="4"/>
+            </Grid>
+
+
+            <!-- COLUMN 3 -->
+            <Grid Grid.Row="1" Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <local:MCCCan x:Name="C1" Grid.Row="0"/>
+                <local:MCCCan x:Name="C2" Grid.Row="1"/>
+                <local:MCCCan x:Name="C3" Grid.Row="2"/>
+                <local:MCCCan x:Name="C4" Grid.Row="3"/>
+                <local:MCCCan x:Name="C5" Grid.Row="4"/>
+            </Grid>
+
+
+
+
+        </Grid>
+        <Rectangle x:Name="HiLite" Visibility="Hidden" IsHitTestVisible="False" Width="20" Height="20" Fill="#FFE4D97C" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.5" />
+
+    </Grid>
+
+
+
+</UserControl>

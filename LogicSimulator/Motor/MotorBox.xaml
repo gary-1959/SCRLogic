@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="SharpCircuit.MotorBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="708" d:DesignWidth="1312">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/SCRLogic;component/Resources/MOTOR-BOX.png"/>
+    </UserControl.Background>
+    <Grid x:Name ="MainContainer" Margin="0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250*"/>
+                <RowDefinition Height="126*"/>
+                <RowDefinition Height="188*"/>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="81*"/>
+            </Grid.RowDefinitions>
+            <!-- TERMINAL BLOCK -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="126*"/>
+                    <ColumnDefinition Width="992*"/>
+                    <ColumnDefinition Width="194*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38*" />
+                        <RowDefinition Height="51*" />
+                        <RowDefinition Height="38*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <local:CircuitPoint x:Name="TB01A" Grid.Row="0" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="TB02A" Grid.Row="0" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="TB03A" Grid.Row="0" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="TB04A" Grid.Row="0" Grid.Column="3"/>
+                    <local:CircuitPoint x:Name="TB05A" Grid.Row="0" Grid.Column="4"/>
+                    <local:CircuitPoint x:Name="TB06A" Grid.Row="0" Grid.Column="5"/>
+                    <local:CircuitPoint x:Name="TB07A" Grid.Row="0" Grid.Column="6"/>
+                    <local:CircuitPoint x:Name="TB08A" Grid.Row="0" Grid.Column="7"/>
+                    <local:CircuitPoint x:Name="TB09A" Grid.Row="0" Grid.Column="8"/>
+                    <local:CircuitPoint x:Name="TB10A" Grid.Row="0" Grid.Column="9"/>
+                    <local:CircuitPoint x:Name="TB11A" Grid.Row="0" Grid.Column="10"/>
+                    <local:CircuitPoint x:Name="TB12A" Grid.Row="0" Grid.Column="11"/>
+                    <local:CircuitPoint x:Name="TB13A" Grid.Row="0" Grid.Column="12"/>
+                    <local:CircuitPoint x:Name="TB14A" Grid.Row="0" Grid.Column="13"/>
+                    <local:CircuitPoint x:Name="TB15A" Grid.Row="0" Grid.Column="14"/>
+                    <local:CircuitPoint x:Name="TB16A" Grid.Row="0" Grid.Column="15"/>
+                    <local:CircuitPoint x:Name="TB17A" Grid.Row="0" Grid.Column="16"/>
+                    <local:CircuitPoint x:Name="TB18A" Grid.Row="0" Grid.Column="17"/>
+                    <local:CircuitPoint x:Name="TB19A" Grid.Row="0" Grid.Column="18"/>
+                    <local:CircuitPoint x:Name="TB20A" Grid.Row="0" Grid.Column="19"/>
+
+                    <local:CircuitPoint x:Name="TB01B" Grid.Row="2" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="TB02B" Grid.Row="2" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="TB03B" Grid.Row="2" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="TB04B" Grid.Row="2" Grid.Column="3"/>
+                    <local:CircuitPoint x:Name="TB05B" Grid.Row="2" Grid.Column="4"/>
+                    <local:CircuitPoint x:Name="TB06B" Grid.Row="2" Grid.Column="5"/>
+                    <local:CircuitPoint x:Name="TB07B" Grid.Row="2" Grid.Column="6"/>
+                    <local:CircuitPoint x:Name="TB08B" Grid.Row="2" Grid.Column="7"/>
+                    <local:CircuitPoint x:Name="TB09B" Grid.Row="2" Grid.Column="8"/>
+                    <local:CircuitPoint x:Name="TB10B" Grid.Row="2" Grid.Column="9"/>
+                    <local:CircuitPoint x:Name="TB11B" Grid.Row="2" Grid.Column="10"/>
+                    <local:CircuitPoint x:Name="TB12B" Grid.Row="2" Grid.Column="11"/>
+                    <local:CircuitPoint x:Name="TB13B" Grid.Row="2" Grid.Column="12"/>
+                    <local:CircuitPoint x:Name="TB14B" Grid.Row="2" Grid.Column="13"/>
+                    <local:CircuitPoint x:Name="TB15B" Grid.Row="2" Grid.Column="14"/>
+                    <local:CircuitPoint x:Name="TB16B" Grid.Row="2" Grid.Column="15"/>
+                    <local:CircuitPoint x:Name="TB17B" Grid.Row="2" Grid.Column="16"/>
+                    <local:CircuitPoint x:Name="TB18B" Grid.Row="2" Grid.Column="17"/>
+                    <local:CircuitPoint x:Name="TB19B" Grid.Row="2" Grid.Column="18"/>
+                    <local:CircuitPoint x:Name="TB20B" Grid.Row="2" Grid.Column="19"/>
+                </Grid>
+            </Grid>
+            <!-- LABEL -->
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="547*"/>
+                    <ColumnDefinition Width="232*"/>
+                    <ColumnDefinition Width="533*"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="1">
+                    <Label x:Name="Label1" Content="MP1A" Margin="0" FontSize="100" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch">
+                    </Label>
+                </Viewbox>
+
+            </Grid>
+        </Grid>
+
+        <Rectangle x:Name="HiLite" Visibility="Hidden" IsHitTestVisible="False" Width="20" Height="20" Fill="#FFE4D97C" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.5" />
+
+    </Grid>
+
+</UserControl>

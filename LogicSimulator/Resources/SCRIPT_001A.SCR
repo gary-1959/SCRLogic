@@ -1,0 +1,15 @@
+/* SCRLogic Fault Scenario Script
+/* SCR CB UV Fault after 1 minute
+/* Format: Time Fault Action Message
+/* Action Codes:
+/* I = Instruction (requires resume)
+/* M = Message
+/* F = Fault
+/* R = Repair
+00:00:00	0000	I	SCRIPT 001: Close all SCR circuit breakers and run MP1
+00:01:00	0283	F	Hey! SCR 1 just tripped off!
+00:01:00	0283	F	Hey! SCR 1 just tripped off!
+00:01:00	0283	F	Hey! SCR 1 just tripped off!
+00:01:00	0283	F	Hey! SCR 1 just tripped off!
+00:01:00	0283	F	Hey! SCR 1 just tripped off!
+

@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="SharpCircuit.DCModuleMeter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="130">
+    <Grid>
+        <Image x:Name="MeterBase" Margin="0" Source="/SCRLogic;component/Resources/DCMODULE-METER-BASE.png"/>
+        <Line x:Name="MeterPointer" X1="116" X2="116" Y1="7" Y2="43" StrokeThickness="2" Stroke="#FF6F0E0E" />
+        <Image x:Name="MeterOverlay" Margin="0" Source="/SCRLogic;component/Resources/DCMODULE-METER-OVERLAY.png"/>
+
+    </Grid>
+</UserControl>

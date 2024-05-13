@@ -1,0 +1,672 @@
+﻿<UserControl x:Class="SharpCircuit.SCROpen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="2762" d:DesignWidth="1099">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/SCRLogic;component/Resources/SCROpen.png"/>
+    </UserControl.Background>
+
+    <Grid x:Name ="MainContainer" Margin="0">
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="249*"/>
+                <RowDefinition Height="888*"/>
+                <RowDefinition Height="91*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="182*"/>
+                <RowDefinition Height="71*"/>
+                <RowDefinition Height="91*"/>
+                <RowDefinition Height="733*"/>
+                <RowDefinition Height="400*"/>
+                <RowDefinition Height="317*"/>
+                <RowDefinition Height="115*"/>
+                <RowDefinition Height="798*"/>
+                <RowDefinition Height="798*"/>
+                <RowDefinition Height="216*"/>
+            </Grid.RowDefinitions>
+            <!-- CB & TB LINE -->
+            <Grid Margin="0" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="451*"/>
+                    <ColumnDefinition Width="235*"/>
+                    <ColumnDefinition Width="648*"/>
+                    <ColumnDefinition Width="453*"/>
+                    <ColumnDefinition Width="212*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="406*"/>
+                        <RowDefinition Height="142*"/>
+                        <RowDefinition Height="340*"/>
+                    </Grid.RowDefinitions>
+                    <!-- CB CONTROLS -->
+                    <Grid Margin="0" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="74*"/>
+                            <RowDefinition Height="33*"/>
+                            <RowDefinition Height="29*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="82*" />
+                            <ColumnDefinition Width="66*" />
+                            <ColumnDefinition Width="82*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <local:CBControl x:Name="cbControl" Margin="0" Grid.Row="1" />
+                </Grid>
+                <Grid Margin="0" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="556*"/>
+                        <RowDefinition Height="90*"/>
+                        <RowDefinition Height="242*"/>
+                    </Grid.RowDefinitions>
+                    <!-- TOP ROW TBs -->
+                    <Grid Margin="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="71*"/>
+                            <ColumnDefinition Width="132*"/>
+                            <ColumnDefinition Width="71*"/>
+                            <ColumnDefinition Width="108*"/>
+                            <ColumnDefinition Width="71*"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- TB4 (2) -->
+                        <Grid Margin="0" Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="22*"/>
+                                <ColumnDefinition Width="27*"/>
+                                <ColumnDefinition Width="22*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <local:CircuitPoint x:Name="cpTB04_21L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_21R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_22L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_22R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_23L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_23R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_24L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_24R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_25L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_25R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_26L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_26R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_27L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_27R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_28L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_28R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_29L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_29R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_30L" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_30R" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_31L" Margin="0" Grid.Row="10" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_31R" Margin="0" Grid.Row="10" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_32L" Margin="0" Grid.Row="11" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_32R" Margin="0" Grid.Row="11" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_33L" Margin="0" Grid.Row="12" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_33R" Margin="0" Grid.Row="12" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_34L" Margin="0" Grid.Row="13" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_34R" Margin="0" Grid.Row="13" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_35L" Margin="0" Grid.Row="14" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_35R" Margin="0" Grid.Row="14" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_36L" Margin="0" Grid.Row="15" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_36R" Margin="0" Grid.Row="15" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_37L" Margin="0" Grid.Row="16" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_37R" Margin="0" Grid.Row="16" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_38L" Margin="0" Grid.Row="17" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_38R" Margin="0" Grid.Row="17" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_39L" Margin="0" Grid.Row="18" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_39R" Margin="0" Grid.Row="18" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_40L" Margin="0" Grid.Row="19" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_40R" Margin="0" Grid.Row="19" Grid.Column="2"/>
+                        </Grid>
+                        <!-- TB4 (1) -->
+                        <Grid Margin="0" Grid.Column="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="22*"/>
+                                <ColumnDefinition Width="27*"/>
+                                <ColumnDefinition Width="22*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <local:CircuitPoint x:Name="cpTB04_01L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_01R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_02L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_02R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_03L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_03R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_04L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_04R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_05L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_05R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_06L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_06R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_07L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_07R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_08L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_08R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_09L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_09R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_10L" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_10R" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_11L" Margin="0" Grid.Row="10" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_11R" Margin="0" Grid.Row="10" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_12L" Margin="0" Grid.Row="11" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_12R" Margin="0" Grid.Row="11" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_13L" Margin="0" Grid.Row="12" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_13R" Margin="0" Grid.Row="12" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_14L" Margin="0" Grid.Row="13" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_14R" Margin="0" Grid.Row="13" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_15L" Margin="0" Grid.Row="14" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_15R" Margin="0" Grid.Row="14" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_16L" Margin="0" Grid.Row="15" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_16R" Margin="0" Grid.Row="15" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_17L" Margin="0" Grid.Row="16" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_17R" Margin="0" Grid.Row="16" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_18L" Margin="0" Grid.Row="17" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_18R" Margin="0" Grid.Row="17" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_19L" Margin="0" Grid.Row="18" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_19R" Margin="0" Grid.Row="18" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB04_20L" Margin="0" Grid.Row="19" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB04_20R" Margin="0" Grid.Row="19" Grid.Column="2"/>
+                        </Grid>
+                        <!-- TB6 -->
+                        <Grid Margin="0" Grid.Column="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="22*"/>
+                                <ColumnDefinition Width="27*"/>
+                                <ColumnDefinition Width="22*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <local:CircuitPoint x:Name="cpTB06_01L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_01R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_02L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_02R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_03L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_03R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_04L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_04R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_05L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_05R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_06L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_06R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_07L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_07R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_08L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_08R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_09L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_09R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_10L" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_10R" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_11L" Margin="0" Grid.Row="10" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_11R" Margin="0" Grid.Row="10" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_12L" Margin="0" Grid.Row="11" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_12R" Margin="0" Grid.Row="11" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_13L" Margin="0" Grid.Row="12" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_13R" Margin="0" Grid.Row="12" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_14L" Margin="0" Grid.Row="13" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_14R" Margin="0" Grid.Row="13" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_15L" Margin="0" Grid.Row="14" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_15R" Margin="0" Grid.Row="14" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_16L" Margin="0" Grid.Row="15" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_16R" Margin="0" Grid.Row="15" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_17L" Margin="0" Grid.Row="16" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_17R" Margin="0" Grid.Row="16" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_18L" Margin="0" Grid.Row="17" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_18R" Margin="0" Grid.Row="17" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_19L" Margin="0" Grid.Row="18" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_19R" Margin="0" Grid.Row="18" Grid.Column="2"/>
+                            <local:CircuitPoint x:Name="cpTB06_20L" Margin="0" Grid.Row="19" Grid.Column="0"/>
+                            <local:CircuitPoint x:Name="cpTB06_20R" Margin="0" Grid.Row="19" Grid.Column="2"/>
+                        </Grid>
+                    </Grid>
+                    <!-- LOWER ROW TB -->
+                    <Grid Margin="0" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="71*"/>
+                            <ColumnDefinition Width="170*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="119*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="33*"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- TB14 -->
+                        <Grid Margin="0" Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="162*"/>
+                                <RowDefinition Height="80*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Margin="0" Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="22*"/>
+                                    <ColumnDefinition Width="27*"/>
+                                    <ColumnDefinition Width="22*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <local:CircuitPoint x:Name="cpTB14_01L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB14_01R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                                <local:CircuitPoint x:Name="cpTB14_02L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB14_02R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                                <local:CircuitPoint x:Name="cpTB14_03L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB14_03R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                                <local:CircuitPoint x:Name="cpTB14_04L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB14_04R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                                <local:CircuitPoint x:Name="cpTB14_05L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB14_05R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                                <local:CircuitPoint x:Name="cpTB14_06L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB14_06R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+
+                            </Grid>
+                        </Grid>
+                        <!-- TB11 -->
+                        <Grid Margin="0" Grid.Column="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="225*"/>
+
+                            </Grid.RowDefinitions>
+                            <Grid Margin="0" Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    
+                                </Grid.RowDefinitions>
+                                <local:CircuitPoint x:Name="cpTB11_01" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB11_02" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB11_03" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB11_04" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB11_05" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB11_06" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB11_07" Margin="0" Grid.Row="6" Grid.Column="0"/>
+
+                            </Grid>
+                        </Grid>
+                        <!-- TB12 -->
+                        <Grid Margin="0" Grid.Column="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="225*"/>
+
+                            </Grid.RowDefinitions>
+                            <Grid Margin="0" Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+
+                                </Grid.RowDefinitions>
+                                <local:CircuitPoint x:Name="cpTB12_01" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB12_02" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB12_03" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB12_04" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB12_05" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB12_06" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                                <local:CircuitPoint x:Name="cpTB12_07" Margin="0" Grid.Row="6" Grid.Column="0"/>
+
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <!-- CB TB LINE -->
+            <Grid Margin="0" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="386*"/>
+                    <ColumnDefinition Width="389*"/>
+                    <ColumnDefinition Width="1224*"/>
+                </Grid.ColumnDefinitions>
+                <!-- CB TB -->
+                <Grid Margin="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="22*" />
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="22*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <local:CircuitPoint x:Name="cpCB_U08L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpCB_U08R" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpCB_U10L" Margin="0" Grid.Row="2" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="cpCB_U10R" Margin="0" Grid.Row="0" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="cpCB_01L" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpCB_01R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpCB_02L" Margin="0" Grid.Row="2" Grid.Column="3"/>
+                    <local:CircuitPoint x:Name="cpCB_02R" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                    <local:CircuitPoint x:Name="cpCB_03L" Margin="0" Grid.Row="2" Grid.Column="4"/>
+                    <local:CircuitPoint x:Name="cpCB_03R" Margin="0" Grid.Row="0" Grid.Column="4"/>
+                    <local:CircuitPoint x:Name="cpCB_04L" Margin="0" Grid.Row="2" Grid.Column="5"/>
+                    <local:CircuitPoint x:Name="cpCB_04R" Margin="0" Grid.Row="0" Grid.Column="5"/>
+                    <local:CircuitPoint x:Name="cpCB_05L" Margin="0" Grid.Row="2" Grid.Column="6"/>
+                    <local:CircuitPoint x:Name="cpCB_05R" Margin="0" Grid.Row="0" Grid.Column="6"/>
+                    <local:CircuitPoint x:Name="cpCB_06L" Margin="0" Grid.Row="2" Grid.Column="7"/>
+                    <local:CircuitPoint x:Name="cpCB_06R" Margin="0" Grid.Row="0" Grid.Column="7"/>
+                    <local:CircuitPoint x:Name="cpCB_07L" Margin="0" Grid.Row="2" Grid.Column="8"/>
+                    <local:CircuitPoint x:Name="cpCB_07R" Margin="0" Grid.Row="0" Grid.Column="8"/>
+                    <local:CircuitPoint x:Name="cpCB_08L" Margin="0" Grid.Row="2" Grid.Column="9"/>
+                    <local:CircuitPoint x:Name="cpCB_08R" Margin="0" Grid.Row="0" Grid.Column="9"/>
+                    <local:CircuitPoint x:Name="cpCB_09L" Margin="0" Grid.Row="2" Grid.Column="10"/>
+                    <local:CircuitPoint x:Name="cpCB_09R" Margin="0" Grid.Row="0" Grid.Column="10"/>
+                    <local:CircuitPoint x:Name="cpCB_10L" Margin="0" Grid.Row="2" Grid.Column="11"/>
+                    <local:CircuitPoint x:Name="cpCB_10R" Margin="0" Grid.Row="0" Grid.Column="11"/>
+                    <local:CircuitPoint x:Name="cpCB_11L" Margin="0" Grid.Row="2" Grid.Column="12"/>
+                    <local:CircuitPoint x:Name="cpCB_11R" Margin="0" Grid.Row="0" Grid.Column="12"/>
+                    <local:CircuitPoint x:Name="cpCB_12L" Margin="0" Grid.Row="2" Grid.Column="13"/>
+                    <local:CircuitPoint x:Name="cpCB_12R" Margin="0" Grid.Row="0" Grid.Column="13"/>
+
+                </Grid>
+                
+            </Grid>
+            <!-- STACK TB LINE -->
+            <Grid Margin="0" Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="427*"/>
+                    <ColumnDefinition Width="108*"/>
+                    <ColumnDefinition Width="982*"/>
+                    <ColumnDefinition Width="108*"/>
+                    <ColumnDefinition Width="374*"/>
+                </Grid.ColumnDefinitions>
+                <!-- TB26 -->
+                <Grid Margin="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="22*" />
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="22*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <local:CircuitPoint x:Name="cpTB26_01L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpTB26_01R" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpTB26_02L" Margin="0" Grid.Row="2" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="cpTB26_02R" Margin="0" Grid.Row="0" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="cpTB26_03L" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpTB26_03R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpTB26_04L" Margin="0" Grid.Row="2" Grid.Column="3"/>
+                    <local:CircuitPoint x:Name="cpTB26_04R" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                </Grid>
+                <!-- TB21 -->
+                <Grid Margin="0" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="22*" />
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="22*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <local:CircuitPoint x:Name="cpTB21_01L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpTB21_01R" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpTB21_02L" Margin="0" Grid.Row="2" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="cpTB21_02R" Margin="0" Grid.Row="0" Grid.Column="1"/>
+                    <local:CircuitPoint x:Name="cpTB21_03L" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpTB21_03R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpTB21_04L" Margin="0" Grid.Row="2" Grid.Column="3"/>
+                    <local:CircuitPoint x:Name="cpTB21_04R" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                </Grid>
+
+            </Grid>
+            <!-- FUSE MICROSWITCHES -->
+            <Grid Margin="0" Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="766*"/>
+                    <ColumnDefinition Width="461*"/>
+                    <ColumnDefinition Width="772*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="0" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="26*"/>
+                        <ColumnDefinition Width="409*"/>
+                        <ColumnDefinition Width="26*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="291*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="291*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="15*"/>
+                    </Grid.RowDefinitions>
+                    <local:CircuitPoint x:Name="cpFS1_1" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpFS1_2" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpFS2_1" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpFS2_2" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpFS3_1" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpFS3_2" Margin="0" Grid.Row="10" Grid.Column="0"/>
+                    <local:CircuitPoint x:Name="cpFS4_1" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpFS4_2" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpFS5_1" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpFS5_2" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpFS6_1" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                    <local:CircuitPoint x:Name="cpFS6_2" Margin="0" Grid.Row="10" Grid.Column="2"/>
+                </Grid>
+                
+            </Grid>
+            <!-- BLOWER CONTACTOR -->
+            <Grid Margin="0" Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="175*"/>
+                    <ColumnDefinition Width="119*"/>
+                    <ColumnDefinition Width="230*"/>
+                    <ColumnDefinition Width="945*"/>
+                    <ColumnDefinition Width="529*"/>
+                </Grid.ColumnDefinitions>
+                <local:BlowerContactor x:Name="BlowerContactor" Margin="0" Grid.Column="1"/>
+                <!-- BLOWER -->
+                <Grid Margin="0" Grid.Row="0" Grid.Column="3">
+                    <Image x:Name="Blower" Margin="0" Grid.Column="0" Source="/SCRLogic;component/Resources/BLOWER-ANIM-STOPPED.gif"/>
+                </Grid>
+            </Grid>
+
+            <!-- CONTACTOR LINE 1 -->
+            <Grid Margin="0" Grid.Row="11">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="209*"/>
+                    <ColumnDefinition Width="279*"/>
+                    <ColumnDefinition Width="157*"/>
+                    <ColumnDefinition Width="279*"/>
+                    <ColumnDefinition Width="145*"/>
+                    <ColumnDefinition Width="279*"/>
+                    <ColumnDefinition Width="155*"/>
+                    <ColumnDefinition Width="279*"/>
+                    <ColumnDefinition Width="219*"/>
+                </Grid.ColumnDefinitions>
+                <local:DCContactor x:Name="K2" Margin="0" Grid.Column="1"/>
+                <local:DCContactor x:Name="K1" Margin="0" Grid.Column="3"/>
+                <local:DCContactor x:Name="K6" Margin="0" Grid.Column="5"/>
+                <local:DCContactor x:Name="K7" Margin="0" Grid.Column="7"/>
+            </Grid>
+            <!-- CONTACTOR LINE 2 -->
+            <Grid Margin="0" Grid.Row="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="209*"/>
+                    <ColumnDefinition Width="279*"/>
+                    <ColumnDefinition Width="223*"/>
+                    <ColumnDefinition Width="538*"/>
+                    <ColumnDefinition Width="251*"/>
+                    <ColumnDefinition Width="279*"/>
+                    <ColumnDefinition Width="219*"/>
+                </Grid.ColumnDefinitions>
+                <local:DCContactor x:Name="K3" Margin="0" Grid.Column="1"/>
+                <local:DCContactor x:Name="K4" Margin="0" Grid.Column="5"/>
+                <Grid Margin="0" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="121*"/>
+                        <RowDefinition Height="636*"/>
+                        <RowDefinition Height="43*"/>
+                    </Grid.RowDefinitions>
+                
+                <local:DCReverser x:Name="K5" Margin="0" Grid.Row="1"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <!-- AUCTIONEERING -->
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3231*" />
+                <RowDefinition Height="258*" />
+                <RowDefinition Height="1533*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="850*" />
+                <ColumnDefinition Width="32*" />
+                <ColumnDefinition Width="200*" />
+                <ColumnDefinition Width="32*" />
+                <ColumnDefinition Width="885*" />
+            </Grid.ColumnDefinitions>
+            <Grid Margin="0" Grid.Row="1"  Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpPC3_01" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_02" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_03" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_04" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_05" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_06" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_07" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_08" Margin="0" Grid.Row="7" Grid.Column="0"/>
+            </Grid>
+            <Grid Margin="0" Grid.Row="1"  Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpPC3_09" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_10" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_11" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_12" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_13" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_14" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_15" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpPC3_16" Margin="0" Grid.Row="7" Grid.Column="0"/>
+            </Grid>
+        </Grid>
+        <Image x:Name="SCRTerminals" IsHitTestVisible="False"  Margin="0" Source="/SCRLogic;component/Resources/SCR2-TERMINALS.png"/>
+        <Image x:Name="SCRWires" IsHitTestVisible="False"  Margin="0" Source="/SCRLogic;component/Resources/SCR2-CONTACTOR-WIRES.png"/>
+        <Image x:Name="SCRAuctioneering" IsHitTestVisible="False"  Margin="0" Source="/SCRLogic;component/Resources/SCR2-AUCTIONEERING.png"/>
+        <Image x:Name="SCRFrame" IsHitTestVisible="False"  Margin="0" Source="/SCRLogic;component/Resources/SCR-OUTER-FRAME.png"/>
+        <Rectangle x:Name="HiLite" Visibility="Hidden" IsHitTestVisible="False" Width="20" Height="20" Fill="#FFE4D97C" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.5" />
+
+    </Grid>
+
+
+
+</UserControl>

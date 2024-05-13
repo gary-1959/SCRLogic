@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="SharpCircuit.AssignmentSwitch"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="808" d:DesignWidth="662">
+    <Grid>
+        <local:AssignmentDeck x:Name="Deck1" Margin="0"/>
+        <local:AssignmentDeck x:Name="Deck2" Margin="0"/>
+        <local:AssignmentDeck x:Name="Deck3" Margin="0"/>
+        <local:AssignmentDeck x:Name="Deck4" Margin="0"/>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="160*" />
+                <RowDefinition Height="140*" />
+                <RowDefinition Height="708*" />
+            </Grid.RowDefinitions>
+            <Grid Margin="0" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="562*"/>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Deck1Button" Margin="0" Grid.Row="0" Source="/SCRLogic;component/Resources/DECK-1-BUTTON.png" Stretch="Fill"/>
+                    <Image x:Name="Deck2Button" Margin="0" Grid.Row="1" Source="/SCRLogic;component/Resources/DECK-2-BUTTON.png" Stretch="Fill"/>
+                    <Image x:Name="Deck3Button" Margin="0" Grid.Row="2" Source="/SCRLogic;component/Resources/DECK-3-BUTTON.png" Stretch="Fill"/>
+                    <Image x:Name="Deck4Button" Margin="0" Grid.Row="3" Source="/SCRLogic;component/Resources/DECK-4-BUTTON.png" Stretch="Fill"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

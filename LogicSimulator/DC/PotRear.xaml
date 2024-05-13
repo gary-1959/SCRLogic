@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="SharpCircuit.PotRear"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="362" d:DesignWidth="362" Width="Auto" Height="Auto">
+    <Grid>
+        <Image x:Name="PotBase" Margin="0" Source="/SCRLogic;component/Resources/POT-REAR-BASE.png" Stretch="Fill"/>
+        <Image x:Name="PotEndStop" Margin="0" Source="/SCRLogic;component/Resources/POT-REAR-END-STOP.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.01"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="PotBody" Margin="0" Source="/SCRLogic;component/Resources/POT-REAR-BODY.png" Stretch="Fill"/>
+        <Image x:Name="PotWiper" Margin="0" Source="/SCRLogic;component/Resources/POT-REAR-WIPER.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.01"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</UserControl>

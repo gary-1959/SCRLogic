@@ -1,0 +1,302 @@
+﻿<UserControl x:Class="SharpCircuit.SCRRelay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="627" d:DesignWidth="747">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/SCRLogic;component/Resources/SCRRelay.png"/>
+    </UserControl.Background>
+    <Grid x:Name ="MainContainer" Margin="0">
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="136*" />
+                <RowDefinition Height="307*" />
+                <RowDefinition Height="190*" />
+                <RowDefinition Height="307*" />
+                <RowDefinition Height="200*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="284*" />
+                <ColumnDefinition Width="69*" />
+                <ColumnDefinition Width="301*" />
+                <ColumnDefinition Width="69*" />
+                <ColumnDefinition Width="297*" />
+                <ColumnDefinition Width="69*" />
+                <ColumnDefinition Width="269*" />
+            </Grid.ColumnDefinitions>
+            <!-- RLA -->
+            <Grid Margin="0" Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*" />
+                    <ColumnDefinition Width="31*" />
+                    <ColumnDefinition Width="19*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpRLA_1L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_7L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_4L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_2L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_8L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_5L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_3L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_9L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_6L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_AL" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLA_BL" Margin="0" Grid.Row="10" Grid.Column="0"/>
+
+                <local:CircuitPoint x:Name="cpRLA_1R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_7R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_4R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_2R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_8R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_5R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_3R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_9R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_6R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_AR" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLA_BR" Margin="0" Grid.Row="10" Grid.Column="2"/>
+            </Grid>
+            <!-- RLB -->
+            <Grid Margin="0" Grid.Row="1" Grid.Column="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*" />
+                    <ColumnDefinition Width="31*" />
+                    <ColumnDefinition Width="19*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpRLB_1L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_7L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_4L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_2L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_8L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_5L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_3L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_9L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_6L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_AL" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLB_BL" Margin="0" Grid.Row="10" Grid.Column="0"/>
+
+                <local:CircuitPoint x:Name="cpRLB_1R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_7R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_4R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_2R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_8R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_5R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_3R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_9R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_6R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_AR" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLB_BR" Margin="0" Grid.Row="10" Grid.Column="2"/>
+            </Grid>
+            <!-- RLC -->
+            <Grid Margin="0" Grid.Row="1" Grid.Column="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*" />
+                    <ColumnDefinition Width="31*" />
+                    <ColumnDefinition Width="19*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpRLC_1L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_7L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_4L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_2L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_8L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_5L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_3L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_9L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_6L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_AL" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLC_BL" Margin="0" Grid.Row="10" Grid.Column="0"/>
+
+                <local:CircuitPoint x:Name="cpRLC_1R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_7R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_4R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_2R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_8R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_5R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_3R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_9R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_6R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_AR" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLC_BR" Margin="0" Grid.Row="10" Grid.Column="2"/>
+            </Grid>
+            <!-- RLD -->
+            <Grid Margin="0" Grid.Row="3" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*" />
+                    <ColumnDefinition Width="31*" />
+                    <ColumnDefinition Width="19*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpRLD_1L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_7L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_4L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_2L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_8L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_5L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_3L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_9L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_6L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_AL" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLD_BL" Margin="0" Grid.Row="10" Grid.Column="0"/>
+
+                <local:CircuitPoint x:Name="cpRLD_1R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_7R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_4R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_2R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_8R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_5R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_3R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_9R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_6R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_AR" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLD_BR" Margin="0" Grid.Row="10" Grid.Column="2"/>
+            </Grid>
+            <!-- RLE -->
+            <Grid Margin="0" Grid.Row="3" Grid.Column="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*" />
+                    <ColumnDefinition Width="31*" />
+                    <ColumnDefinition Width="19*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpRLE_1L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_7L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_4L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_2L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_8L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_5L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_3L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_9L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_6L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_AL" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLE_BL" Margin="0" Grid.Row="10" Grid.Column="0"/>
+
+                <local:CircuitPoint x:Name="cpRLE_1R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_7R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_4R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_2R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_8R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_5R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_3R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_9R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_6R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_AR" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLE_BR" Margin="0" Grid.Row="10" Grid.Column="2"/>
+            </Grid>
+            <!-- RLF -->
+            <Grid Margin="0" Grid.Row="3" Grid.Column="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*" />
+                    <ColumnDefinition Width="31*" />
+                    <ColumnDefinition Width="19*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <local:CircuitPoint x:Name="cpRLF_1L" Margin="0" Grid.Row="0" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_7L" Margin="0" Grid.Row="1" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_4L" Margin="0" Grid.Row="2" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_2L" Margin="0" Grid.Row="3" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_8L" Margin="0" Grid.Row="4" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_5L" Margin="0" Grid.Row="5" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_3L" Margin="0" Grid.Row="6" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_9L" Margin="0" Grid.Row="7" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_6L" Margin="0" Grid.Row="8" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_AL" Margin="0" Grid.Row="9" Grid.Column="0"/>
+                <local:CircuitPoint x:Name="cpRLF_BL" Margin="0" Grid.Row="10" Grid.Column="0"/>
+
+                <local:CircuitPoint x:Name="cpRLF_1R" Margin="0" Grid.Row="0" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_7R" Margin="0" Grid.Row="1" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_4R" Margin="0" Grid.Row="2" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_2R" Margin="0" Grid.Row="3" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_8R" Margin="0" Grid.Row="4" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_5R" Margin="0" Grid.Row="5" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_3R" Margin="0" Grid.Row="6" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_9R" Margin="0" Grid.Row="7" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_6R" Margin="0" Grid.Row="8" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_AR" Margin="0" Grid.Row="9" Grid.Column="2"/>
+                <local:CircuitPoint x:Name="cpRLF_BR" Margin="0" Grid.Row="10" Grid.Column="2"/>
+            </Grid>
+        </Grid>
+        <Image x:Name="SCRWires"  IsHitTestVisible="False" Margin="0" Source="/SCRLogic;component/Resources/SCR2-RELAY.png" />
+        <Rectangle x:Name="HiLite" Visibility="Hidden" IsHitTestVisible="False" Width="20" Height="20" Fill="#FFE4D97C" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.5" />
+
+    </Grid>
+
+
+
+</UserControl>

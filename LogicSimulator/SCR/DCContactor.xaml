@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SharpCircuit.DCContactor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="799" d:DesignWidth="279">
+    <Grid>
+        <Image x:Name="ContactorImage" Margin="0" Source="/SCRLogic;component/Resources/CONTACTOR-1250-OPEN.png"/>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="589*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="21*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="39*"/>
+                <RowDefinition Height="28*"/>
+                <RowDefinition Height="37*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="75*"/>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="21*"/>
+                <ColumnDefinition Width="72*"/>
+                <ColumnDefinition Width="31*"/>
+            </Grid.ColumnDefinitions>
+            <local:CircuitPoint x:Name="cp01" Margin="0" Grid.Row="5" Grid.Column="6"/>
+            <local:CircuitPoint x:Name="cp02" Margin="0" Grid.Row="7" Grid.Column="6"/>
+            <local:CircuitPoint x:Name="cp03" Margin="0" Grid.Row="5" Grid.Column="0"/>
+            <local:CircuitPoint x:Name="cp04" Margin="0" Grid.Row="7" Grid.Column="0"/>
+            <local:CircuitPoint x:Name="cp05" Margin="0" Grid.Row="1" Grid.Column="6"/>
+            <local:CircuitPoint x:Name="cp06" Margin="0" Grid.Row="3" Grid.Column="6"/>
+            <local:CircuitPoint x:Name="cp07" Margin="0" Grid.Row="1" Grid.Column="0"/>
+            <local:CircuitPoint x:Name="cp08" Margin="0" Grid.Row="3" Grid.Column="0"/>
+            <local:CircuitPoint x:Name="cpP" Margin="0" Grid.Row="9" Grid.Column="2"/>
+            <local:CircuitPoint x:Name="cpN" Margin="0" Grid.Row="9" Grid.Column="4"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,101 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             xmlns:SharpCircuit="clr-namespace:SharpCircuit" x:Class="SharpCircuit.SCRTabControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <RadialGradientBrush x:Key="BackgroundBrush">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </UserControl.Resources>
+    <Grid>
+
+        <TabControl x:Name="tabControl" Margin="0" TabStripPlacement="Bottom">
+            <!-- CLOSED -->
+            <TabItem Header="Closed">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25" x:Name="sliderClosed" Margin="4"/>
+                    <ScrollViewer Name="scrollViewerClosed" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridClosed" Width="1099" Height="2762" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformClosed"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:SCRClosed x:Name="SCRClosedControl" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- OPEN -->
+            <TabItem Header="Open">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25" x:Name="sliderOpen" Margin="4"/>
+                    <ScrollViewer Name="scrollViewerOpen" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridOpen" Width="1099" Height="2762" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformOpen"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:SCROpen x:Name="SCROpenControl" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- DOOR -->
+            <TabItem Header="Door">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25" x:Name="sliderDoor" Margin="4"/>
+                    <ScrollViewer Name="scrollViewerDoor" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridDoor" Width="1099" Height="2762" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformDoor"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:SCRDoor x:Name="SCRDoorControl" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- RELAY -->
+            <TabItem Header="Relay">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25" x:Name="sliderRelay" Margin="4"/>
+                    <ScrollViewer Name="scrollViewerRelay" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridRelay" Width="747" Height="627" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformRelay"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:SCRRelay x:Name="SCRRelayControl" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

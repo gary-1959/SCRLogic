@@ -1,0 +1,161 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             xmlns:SharpCircuit="clr-namespace:SharpCircuit" x:Class="SharpCircuit.MotorTabControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <RadialGradientBrush x:Key="BackgroundBrush">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </UserControl.Resources>
+    <Grid>
+
+        <TabControl x:Name="tabControl" Margin="0" TabStripPlacement="Bottom">
+            <!-- MP1A -->
+            <TabItem Header="MP1A">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderMP1A" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerMP1A" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridMP1A" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformMP1A"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="MP1A" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- MP1B -->
+            <TabItem Header="MP1B">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderMP1B" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerMP1B" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridMP1B" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformMP1B"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="MP1B" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- MP2A -->
+            <TabItem Header="MP2A">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderMP2A" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerMP2A" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridMP2A" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformMP2A"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="MP2A" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- MP2B -->
+            <TabItem Header="MP2B">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderMP2B" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerMP2B" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridMP2B" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformMP2B"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="MP2B" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- DWA -->
+            <TabItem Header="DWA">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderDWA" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerDWA" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridDWA" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformDWA"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="DWA" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- DWB -->
+            <TabItem Header="DWB">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderDWB" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerDWB" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridDWB" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformDWB"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="DWB" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <!-- DWB -->
+            <TabItem Header="RT">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="sliderRT" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25"  Margin="4"/>
+                    <ScrollViewer Name="scrollViewerRT" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridRT" Width="1312" Height="708" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformRT"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MotorBox x:Name="RT" Margin="0"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

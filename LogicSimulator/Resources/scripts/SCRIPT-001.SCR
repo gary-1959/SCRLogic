@@ -1,0 +1,7 @@
+/* SCRLogic Fault Scenario Script
+/* Demo Script 001: SCR1 Trip
+/* Puts 2 faults in SCR1 UV logic  TS1 and FS4
+#1.00
+00:00:00	0000	I	<h1>Complete the following:</h1>{{n}}<ul>{{n}}<li>Close the SCR circuit breakers for SCR1-4.</li>{{n}}<li>Turn the Drillers Console Assignment Switch to the 11 o'clock position.</li>{{n}}<li>Switch Mud Pump 1 and 2 on and Drawworks and Rotary Table to FWD.</li>{{n}}<li>Turn the hand throttles up to about half way and RT Current limit up all the way.</li>{{n}}<li>Check all SCRs show voltage and current</li></ul>	tannoy.png
+00:00:10	0265	F	{{empty}}	noimage.png
+00:00:00	0270	F	<p>We were making hole and Mud Pump 1 just went off-line.</p>{{n}}<p>We need that pump running NOW!</p>	driller.png

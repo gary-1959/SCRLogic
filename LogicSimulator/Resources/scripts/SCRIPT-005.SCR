@@ -1,0 +1,13 @@
+/* SCRLogic Fault Scenario Script
+/* Demo Script 005: Compilation of demo scripts 1-4
+#1.00
+00:00:00	0000	I	<h1>Complete the following:</h1>{{n}}<ul>{{n}}<li>Close the SCR circuit breakers for SCR1-4.</li>{{n}}<li>Turn the Drillers Console Assignment Switch to the 11 o'clock position.</li>{{n}}<li>Switch Mud Pump 1 and 2 on and Drawworks and Rotary Table to FWD.</li>{{n}}<li>Turn the hand throttles up to about half way and RT Current limit up all the way.</li>{{n}}<li>Check all SCRs show voltage and current</li></ul>	tannoy.png
+00:00:10	0265	F	{{empty}}	noimage.png
+00:00:00	0270	F	<p>We were making hole and Mud Pump 1 just went off-line.</p>{{n}}<p>We need that pump running NOW!</p>	driller.png
+00:05:10	0452	F	{{empty}}	noimage.png
+00:00:00	1006	F	<p>I can't run MP1 on SCR2 and I'm getting an alarm when I turn up the throttle.</p>{{n}}<p>I don't know if it is related, but SCR2 won't assign out to the Rotary table.</p>{{n}}<p>Seems like there ain't nothing working down there!</p>	driller.png
+00:05:10	0301	F	{{empty}}	noimage.png
+00:00:00	0313	F	{{empty}}	noimage.png
+00:00:00	0359	F	<p>We need the Drawworks NOW and it won't run!</p>{{n}}<p>What the hell is wrong with you people!</p>	roughneck.png
+00:05:10	0023	F	<p>I can't get anything out of the Rotary, then it suddenly takes off.</p>{{n}}<p>You gotta fix this, this is plain dangerous!</p>	driller.png
+00:02:10	0016	F	{{empty}}	noimage.png
