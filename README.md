@@ -1,4 +1,4 @@
-# SCRLogic
+# SCRLogic - The SCR Training Simulator for Rig Electricians
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/gary-1959/SCRLogic/main/images/SCR-Logic-Banner-2.png" alt="SCRLogic - The SCR Training Simulator for Rig Electricians" title="SCRLogic - The SCR Training Simulator for Rig Electricians">
