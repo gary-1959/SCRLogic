@@ -1,75 +1,38 @@
-SharpCircuit
-=======
+# SCRLogic
 
-This is a C# port of Paul Falstad's excellent [circuit simulator](http://www.falstad.com/circuit/) applet. 
+<p align="center">
+<img src="https://raw.githubusercontent.com/gary-1959/SCRLogic/main/images/SCR-Logic-Banner-2.png" alt="FutureNET DASH Logo" title="FutureNET DASH Logo">
+</p>
 
-Most of the circuit elements are untested. Initial testing suggests that the majority of the circuits work exactly as they did in the applet, but until further notice, your mileage may vary.
 
-Licence: MIT/Boost C++
+SCRLogic is a software simulation package for training rig electricians to troubleshoot SCR systems.
 
-**DISCLAIMER**
+It is written in C# for a Windows PC. There is some fairly trivial license protection built in, which can be fairly easily overridden in the source to fully unlock the entire package. As it is it will run in a limited demo mode. Permission is hereby granted by anyone to remove this protection and publish with the appropriate credits.
 
-This project is rated 'H' for hobbyist, I am not an electrical engineer! The tests in this project compare the output of the simulation to values extracted from falstad's original applet, they have not been independently verified for mathematical or experimental rigour.
+The file SCRLogic.zip contains a downloadable installer so might be worth a try if you don't fancy rebuilding the project. 
+																
+Although it is based on a Hill Graham Controls Land Rig, the control philosophy is almost identical to Ross Hill and similar systems, and the fault-finding techniques learned by using the software can be applied to a whole range of equipment.
 
-## ToDo
+The software is built of two parts: the graphic representation of the system equipment, and a mathematical simulation of the analogue circuits. 
 
-- Test everything!
-- Is there a better way to handle elements resizing their lead array?
-- Is there a simpler way to model node relationships?.
-- Refactor voltage elements
-- Remove empty classes
+The student can probe terminals on the simulation screens and measure the voltage at each point.
 
-Testing priority:
-Voltage waves, SweepElm, Chips
+Faults can be applied to the circuit, which then allows the student to practice identification of faults by understanding the schematics and the observed measurements.
 
-## Licence
+Faults can be introduced manually or from a pre-defined timed sequence of events controlled by a script running in the background. Scripts can be customised and saved and can create complex scenarios which will test the abilities of the most experienced technician.
 
-The original applet source code [[download](http://www.falstad.com/circuit/src.zip)] is licensed under Paul Falstad's [Applet Source Licence](http://www.falstad.com/licensing.html). The new API and other improvements are licensed under the Boost Software License.
+The simulated system contains four SCRs, dual motor Drawworks, a Rotary Table and two parallel-motor Mud Pumps. Access is available to all four SCRs, the Drillers Console and Foot Throttle, blower MCC starters and the motor terminal boxes. 
 
-```
-CirSim.java (c) 2010 by Paul Falstad - java@falstad.com
-http://www.falstad.com/circuit/
+Note that SCRLogic incorporates no generator control logic because the system complexity lies with the DC Motor and Auxiliary control circuits.
 
-Falstad.com Applet Source Licence.
-http://www.falstad.com/licensing.html
+This program assumes that the user understands what an SCR system is, what it is used for and how it works, and is familiar with the terminology associated with a drilling rig. However it could be used as a training aid to introduce SCR systems to electricians from an industrial or domestic background.
 
-You have permission to use these applets in a classroom setting or take screenshots 
-as long as the applets are unmodified. Modification or redistribution for non-commercial 
-purposes is allowed, as long as you credit me (Paul Falstad) and provide a link to my page 
-(the page you found the applet(s) on, or http://www.falstad.com/mathphysics.html). Contact 
-me for any other uses. The source code for each applet is generally available on that applet's 
-web page, but some of the applets use third-party source code that has restrictions.
+To understand the full capabilities of SCRLogic a User Manual PDF is available here.
 
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
-WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-```
+## Installation
 
-```
-SharpCircuit (c) 2014 Riley 'Mervill' Godard - mervills.email@gmail.com
-https://github.com/Mervill/SharpCircuit
-http://transistorcollective.net/
+The software has complex calculations to perform to simulate the analogue circuitry, so a Windows (version 7 or later) PC with plenty of memory (at least 4GB) and a powerful CPU will improve the user experience. The software will run on 32-bit machines, but these may experience memory problems due to memory fragmentation, so 64-bit is recommended.
 
-Boost Software License - Version 1.0 - August 17, 2003
- 
-Permission is hereby granted, free of charge, to any person or organization
-obtaining a copy of the software and accompanying documentation covered by
-this license (the "Software") to use, reproduce, display, distribute,
-execute, and transmit the Software, and to prepare [[derivative work]]s of the
-Software, and to permit third-parties to whom the Software is furnished to
-do so, all subject to the following:
- 
-The copyright notices in the Software and this entire statement, including
-the above license grant, this restriction and the following disclaimer,
-must be included in all copies of the Software, in whole or in part, and
-all derivative works of the Software, unless such copies or derivative
-works are solely in the form of machine-executable object code generated by
-a source language processor.
- 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
-SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
-FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.
-```
+A mouse with a scroll wheel is required.
+
+The demo version has some limitations on usage (most notably scripting and a limited number of faults) and will time out after 20 minutes of use. To unlock all the features you would need to remove the trivial licensing protection in the source and and recompile.
