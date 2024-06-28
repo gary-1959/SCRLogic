@@ -1,7 +1,7 @@
 # SCRLogic - The SCR Training Simulator for Rig Electricians
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/gary-1959/SCRLogic/main/images/SCR-Logic-Banner-2.png" alt="SCRLogic - The SCR Training Simulator for Rig Electricians" title="SCRLogic - The SCR Training Simulator for Rig Electricians">
+<img src="https://raw.githubusercontent.com/gary-1959/SCRLogic/main/User%20Manual/images/SPLASH.png" alt="SCRLogic - The SCR Training Simulator for Rig Electricians" title="SCRLogic - The SCR Training Simulator for Rig Electricians">
 </p>
 
 SCRLogic is a software simulation package for training rig electricians to troubleshoot SCR systems.
